@@ -1,0 +1,19 @@
+{
+  "name": "assign3-css-precomiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sitelaunch": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run sitelaunch\" \"npm run sasslauncher\"",
+    "sasslauncher": "sass --watch src/scss:public/assets/css"
+  },
+  "author": "Nirmal Loka",
+  "license": "private",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.5"
+  }
+}
